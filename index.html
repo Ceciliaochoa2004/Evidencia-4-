@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Blossom</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./logo.jpg" alt="Logo de Jenstore" class="logo-img">
+                <div class="logo-text">
+                    <h1>Cherry Blossom</h1>
+                    <p>Flores</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#" id="login-btn">Iniciar Sesión</a></li>
+                <li><a href="#" id="signup-btn">Crear Cuenta</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="texto-hero">
+                <h1>Nuevas Colecciones</h1>
+                <p>Un Ramo Perfecto</p>
+                <a href="#" class="btn">Comprar Ahora</a>
+            </div>
+            <img src="./florero.jpg" alt="Imagen principal flor" class="hero-img">
+        </section>
+    </header>
+
+    <main>
+        <section class="colecciones">
+            <div class="coleccion">
+                <img src="./lavanda.jpg" alt="Lavanda">
+                <div class="texto-coleccion">
+                    <h2>Colecciones de Lavanda</h2>
+                    <p>Hasta 20% de descuento</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+            <div class="coleccion">
+                <img src="./rosas.jpg" alt="Rosa">
+                <div class="texto-coleccion">
+                    <h2>Rosas</h2>
+                    <p>40 artículos</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div class="coleccion">
+                <img src="./happymom.jpg" alt="Happy Women's Day">
+                <div class="texto-coleccion">
+                    <h2>Feliz Día de la Mujer</h2>
+                    <p>Hasta 30% de descuento</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de tarjetas de inicio de sesión y crear cuenta -->
+        <section class="auth-cards hidden">
+            <!-- Card de Inicio de Sesión -->
+            <div id="login-card" class="card hidden">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form">
+                    <label for="emailL">Correo Electrónico</label>
+                    <input type="email" id="emailL" placeholder="Ingresa tu correo" required>
+                    
+                    <label for="passL">Contraseña</label>
+                    <input type="password" id="passL" placeholder="Ingresa tu contraseña" required>
+                    
+                    <button type="button" id="buttonL" class="btn">Iniciar Sesión</button>
+                </form>
+            </div>
+
+            <!-- Card de Crear Cuenta -->
+            <div id="signup-card" class="card hidden">
+                <h2>Crear una Cuenta</h2>
+                <form id="signup-form">
+                    <label for="emailR">Correo Electrónico</label>
+                    <input type="email" id="emailR" placeholder="Ingresa tu correo" required>
+                    
+                    <label for="passR">Contraseña</label>
+                    <input type="password" id="passR" placeholder="Ingresa tu contraseña" required>
+                    
+                    <button type="button" id="buttonR" class="btn">Crear Cuenta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Categoría de Jenstore</p>
+    </footer>
+
+    <script src="index.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
